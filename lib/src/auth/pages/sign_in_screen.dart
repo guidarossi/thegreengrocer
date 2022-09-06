@@ -4,7 +4,7 @@ import 'package:thegreengrocer/src/auth/base/base_screen.dart';
 import 'package:thegreengrocer/src/auth/config/custom_colors.dart';
 import 'package:thegreengrocer/src/auth/pages/sign_up_screen.dart';
 
-import '../components/custom_text_field.dart';
+import 'common_widgets/custom_text_field.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({Key? key}) : super(key: key);
@@ -75,7 +75,7 @@ class SignInScreen extends StatelessWidget {
                         offset: Offset.zero,
                         blurRadius: 10,
                         blurStyle: BlurStyle.normal,
-                        spreadRadius: 5)
+                        spreadRadius: 5,),
                   ],
                   color: Colors.white,
                   borderRadius: BorderRadius.vertical(top: Radius.circular(45)),

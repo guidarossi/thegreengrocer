@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:thegreengrocer/src/auth/pages/home/home_tab.dart';
 
+import '../pages/cart/cart_tab.dart';
+import '../pages/orders/orders_tab.dart';
+import '../pages/profile/profile_tab.dart';
+
 class BaseScreen extends StatefulWidget {
   const BaseScreen({Key? key}) : super(key: key);
 
@@ -16,19 +20,14 @@ class _BaseScreenState extends State<BaseScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
-        physics: const NeverScrollableScrollPhysics(), //remove mudanca de tela por gestos
+        physics: const NeverScrollableScrollPhysics(),
+        //remove mudanca de tela por gestos
         controller: pageController,
-        children: [
-          const HomeTab(),
-          Container(
-            color: Colors.yellow,
-          ),
-          Container(
-            color: Colors.blue,
-          ),
-          Container(
-            color: Colors.purple,
-          ),
+        children: const[
+           HomeTab(),
+           CartTab(),
+           OrdersTab(),
+           ProfileTab(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
