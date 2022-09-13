@@ -2,7 +2,6 @@ import 'package:add_to_cart_animation/add_to_cart_animation.dart';
 import 'package:add_to_cart_animation/add_to_cart_icon.dart';
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:thegreengrocer/src/auth/config/custom_colors.dart';
 import 'package:thegreengrocer/src/auth/config/app_data.dart' as appData;
 import 'package:thegreengrocer/src/auth/pages/common_widgets/custom_shimmer.dart';
